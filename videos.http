@@ -1,0 +1,28 @@
+@API = http://localhost:4000
+
+GET {{API}}/videos
+
+###
+GET {{API}}/videos/5fa7351a93b2138f74dbec44
+
+### Create a video
+POST {{API}}/videos
+Content-Type: application/json
+
+{
+  "url": "https://www.youtube.com/watch?v=24piEvK8DVI",
+  "title": "Inferno",
+  "description": "music video"
+}
+
+###
+DELETE {{API}}/videos/5fa7351a93b2138f74dbec44
+
+###
+PUT {{API}}/videos/5fa733d8b8f8216a9c361d53
+Content-Type: application/json
+
+{
+  "title": "black clover op 5 gamushura",
+  "description": "mejor op "
+}
